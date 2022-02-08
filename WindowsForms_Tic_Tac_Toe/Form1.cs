@@ -73,18 +73,37 @@ namespace WindowsForms_Tic_Tac_Toe
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BtnStartStop.Text = "Stop Game";
-            GrpPlayers.Enabled = false;
-            GrpFirst.Enabled = false;
-            groupComputer.Enabled = false;
-            Exit.Enabled = false;
-            xTurn = true;
-            Lbl1Message.Text = "X's Turn";
-            // reset boxes
-            for (int i = 0; i < 9; i++)
-                boxarray[i].Text = "";
-            canClick = true;
-            numberClicks = 0;
+            if(BtnStartStop.Text=="Start")
+            {
+                BtnStartStop.Text = "Stop Game";
+                GrpPlayers.Enabled = false;
+                GrpFirst.Enabled = false;
+                groupComputer.Enabled = false;
+                Exit.Enabled = false;
+                xTurn = true;
+                Lbl1Message.Text = "X's Turn";
+              
+                for (int i = 0; i < 9; i++)
+                    boxarray[i].Text = "";
+                canClick = true;
+                numberClicks = 0;
+            }
+
+            else
+            {
+                BtnStartStop.Text = "Start Game";
+                Lbl1Message.Text = "Game Stopped";
+                GrpPlayers.Enabled = true;
+                if (radioButton2.Checked)
+                {
+                    GrpFirst.Enabled = true;
+                    groupComputer.Enabled = true;
+                }
+                Exit.Enabled = true;
+                canClick = false;
+            }
+
+
         }
 
         private void Exit_Click(object sender, EventArgs e)
