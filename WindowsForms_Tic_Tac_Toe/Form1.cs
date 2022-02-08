@@ -18,6 +18,7 @@ namespace WindowsForms_Tic_Tac_Toe
         }
 
         Label[] boxarray = new Label[9];
+        String[] possibleWins = new String[8];
         bool xTurn;
         bool canClick = false;
         int numberClicks;
@@ -39,6 +40,15 @@ namespace WindowsForms_Tic_Tac_Toe
             boxarray[7] = label9;
             boxarray[8] = label10;
 
+            possibleWins[0] = "012";
+            possibleWins[1] = "345";
+            possibleWins[2] = "678";
+            possibleWins[3] = "036";
+            possibleWins[4] = "147";
+            possibleWins[5] = "258";
+            possibleWins[6] = "048";
+            possibleWins[7] = "246";
+
             for (int i = 0; i < 9; i++)
                 boxarray[i].Text = "";
             Lbl1Message.Text = "Game Stopped";
@@ -48,17 +58,17 @@ namespace WindowsForms_Tic_Tac_Toe
         }
         private void label7_Click(object sender, EventArgs e)
         {
-
+            lblBox_Click( sender,e);
         }
 
         private void label9_Click(object sender, EventArgs e)
         {
-
+            lblBox_Click(sender, e);
         }
 
         private void label12_Click(object sender, EventArgs e)
         {
-
+            lblBox_Click(sender, e);
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
@@ -111,6 +121,83 @@ namespace WindowsForms_Tic_Tac_Toe
             this.Close();
         }
 
-       
+        private void lblBox_Click(object sender, EventArgs e)
+        {
+            String whoWon = "";
+            int i;
+            if (canClick)
+            {
+              
+                Label clickedBox;
+                clickedBox = (Label)sender;
+               
+                i = Convert.ToInt32(clickedBox.Name[clickedBox.Name.Length -1].ToString()) - 1;
+               
+                if (boxarray[i].Text != "")
+                    return;
+                numberClicks++;
+                if (xTurn)
+                {
+                    boxarray[i].Text = "X";
+                    xTurn = false;
+                    Lbl1Message.Text = "O's Turn";
+                }
+                else
+                {
+                    boxarray[i].Text = "O";
+                    xTurn = true;
+                    Lbl1Message.Text = "X's Turn";
+                }
+             
+                if (whoWon != "")
+                {
+                    Lbl1Message.Text = whoWon + " wins!";
+                    BtnStartStop.PerformClick();
+                    return;
+                }
+                else if (numberClicks == 9)
+                {
+
+                    Lbl1Message.Text = "It's a draw!";
+                    BtnStartStop.PerformClick();
+                    return;
+                }
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            lblBox_Click(sender, e);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            lblBox_Click(sender, e);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            lblBox_Click(sender, e);
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            lblBox_Click(sender, e);
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            lblBox_Click(sender, e);
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            lblBox_Click(sender, e);
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            lblBox_Click(sender, e);
+        }
     }
 }

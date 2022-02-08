@@ -80,6 +80,7 @@ namespace WindowsForms_Tic_Tac_Toe
             this.label2.TabIndex = 1;
             this.label2.Text = "X";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -89,6 +90,7 @@ namespace WindowsForms_Tic_Tac_Toe
             this.label3.TabIndex = 2;
             this.label3.Text = "X";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -98,6 +100,7 @@ namespace WindowsForms_Tic_Tac_Toe
             this.label4.TabIndex = 3;
             this.label4.Text = "X";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -107,6 +110,7 @@ namespace WindowsForms_Tic_Tac_Toe
             this.label5.TabIndex = 6;
             this.label5.Text = "X";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -116,6 +120,7 @@ namespace WindowsForms_Tic_Tac_Toe
             this.label6.TabIndex = 5;
             this.label6.Text = "X";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -135,6 +140,7 @@ namespace WindowsForms_Tic_Tac_Toe
             this.label8.TabIndex = 9;
             this.label8.Text = "X";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
             // 
@@ -154,6 +160,7 @@ namespace WindowsForms_Tic_Tac_Toe
             this.label10.TabIndex = 7;
             this.label10.Text = "X";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
             // 
