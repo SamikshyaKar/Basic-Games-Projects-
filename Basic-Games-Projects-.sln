@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms_Tic_Tac_Toe", "WindowsForms_Tic_Tac_Toe\WindowsForms_Tic_Tac_Toe.csproj", "{F8882708-387E-4E37-9012-F5D357C13E40}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms-TicTacToe", "WindowsForms-TicTacToe\WindowsForms-TicTacToe.csproj", "{348859F2-F422-457B-A90D-01135ED0D98B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F8882708-387E-4E37-9012-F5D357C13E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8882708-387E-4E37-9012-F5D357C13E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8882708-387E-4E37-9012-F5D357C13E40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{348859F2-F422-457B-A90D-01135ED0D98B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{348859F2-F422-457B-A90D-01135ED0D98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{348859F2-F422-457B-A90D-01135ED0D98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{348859F2-F422-457B-A90D-01135ED0D98B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
